@@ -1,0 +1,26 @@
+services:
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile.client
+    container_name: vue-client
+    ports:
+      - "21000:80"
+    restart: unless-stopped
+
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile.server
+    container_name: express-api
+    ports:
+      - "21001:3000"
+    environment:
+      - NODE_ENV=production
+      - GRAPHQL_ENDPOINT=${GRAPHQL_ENDPOINT}
+      - GRAPHQL_TOKEN=${GRAPHQL_TOKEN}
+      - GRAPHQL_SECRET=${GRAPHQL_SECRET}
+      - USERNAME=${USERNAME}
+      - PASSWORD=${PASSWORD}
+      - TOKEN=${TOKEN}
+    restart: unless-stopped
