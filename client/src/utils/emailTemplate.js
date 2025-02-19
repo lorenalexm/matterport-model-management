@@ -10,22 +10,20 @@ export function generateEmailTemplate(presenter, listings) {
 	return `
 Hi ${presenter},
 
-We hope you're doing well! We wanted to give you a quick heads-up about your Matterport models that have reached or exceeded their included 1-year hosting period.
+We hope the start of 2025 finds you well! We are also reaching out to let you know that your Matterport home model(s) listed below have either reached or exceeded their included 1-year period of hosting contracted at the time of original scheduling. 
 
-To ensure continued access, we offer an easy renewal option: $19 per property for an additional year of hosting as stated when the job was originally scheduled.
+Not to worry - Showcase Exposure has kept each of these models live for you on a temporary basis. If you are needing continued access, we are happy to take care of this through an easy renewal option. Simply reply to this email letting us know which property model(s) to keep active, and for $19 per property, we will renew the hosting of your Matterport model for another 1-year and provide a copy of your final invoice for your records. 
 
 Properties Needing Renewal:
 ${formatListings(listings)}
 
 Total cost: $${listings.length * 19}
 
-Each of these models is still live, and we'd love to keep them accessible for you and your clients! If you'd like to extend hosting, simply reply to this email, and we’ll generate an invoice and take care of everything.
+If your model(s) no longer require hosting, no problem! Models that are NOT renewed will be removed either at your request OR within two weeks from the date of this email, whichever comes first.
 
-If you no longer need hosting, no worries—models that are not renewed will be removed at your request or after two weeks from the date of this email; whichever is sooner.
+We’re always here for you; so please let us know how you would like to proceed or if you have any additional questions. Showcase Exposure values YOU, which means taking care of your needs is our number one priority. Thank you so much for your support of our business!
 
-Let us know how you'd like to proceed, and thanks for being a valued part of our community. We're always here if you have any questions!
-
-Best,
+Cordially,
 Madeline Loren
 Showcase Exposure
 scheduling@showcaseexposure.com
