@@ -6,7 +6,7 @@ import { generateEmailTemplate } from "../utils/emailTemplate";
 
 dayjs.extend(relativeTime);
 
-const endpoint = "https://matterport-model-management-server.myside.app";
+const endpoint = "https://matterport-model-management.myside.app/api";
 const data = ref({});
 const updating = ref(false);
 const loading = ref(true);

@@ -5,7 +5,7 @@ const username = ref("");
 const password = ref("");
 const error = ref("");
 const emits = defineEmits(["authenticated"]);
-const endpoint = "https://matterport-model-management-server.myside.app/login";
+const endpoint = "https://matterport-model-management.myside.app/api/login";
 
 async function onSubmit(event) {
 	event.preventDefault();
